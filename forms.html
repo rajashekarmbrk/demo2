@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        label{
+            width: 80px;
+            display: inline-block;
+        }
+        .raj{
+            background-color: rgb(175, 195, 238);
+            border: 4px solid rgb(9, 9, 10);
+            margin: 20px;
+            padding: 40px;
+            width: 500px;
+            border-radius: 30px;
+        }
+        #but{
+            width: 175px;
+            border-radius: 20px;
+        }
+        #ret{
+            width: 200px ;
+            border-radius: 20px;
+        }
+        #txtara{
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form class="raj">
+        <center><h2>REGISTRATION FORM</h2><br></center>
+        <div>
+            <label for="firstname">firstname</label>
+            <input type="text" >
+        </div><br>
+        <div>
+            <label for="lastname">lastname</label>
+            <input type="text">
+        </div><br>
+        <div>
+            <label for="Mobilnumber">Mob.num</label>
+            <input type="number">
+        </div><br>
+        <div>
+            <label for="gmail">gmail</label>
+            <input type="email">
+        </div><br>
+        <div>
+            <h3>select gender</h3>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="gen"><br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="gend"><br>
+            <label for="others">others</label>
+            <input type="radio" name="gender" id="g"><br> 
+        </div>
+        <div>
+            <h3>select your hobby</h3>
+            <input type="checkbox" name="checkbox1">
+            <label for="checkbox1">sports</label>
+            <input type="checkbox" name="checkbox2">
+            <label for="checkbox2">reading</label>
+            <input type="checkbox" name="checkbox3">
+            <label for="checkbox3">writing</label>
+            <input type="checkbox" name="checkbox4">
+            <label for="checkbox4">dance</label>
+            
+        </div>
+        <div>
+            <h3>select your district</h3>
+            <select name="select" id="select">
+                <option value="op1">select</option>
+                <option value="op1">mysore</option>
+                <option value="op2">bengaluru</option>
+                <option value="op3">mandya</option>
+                <option value="op4">ballari</option>
+            </select>
+        </div>
+        <div>
+            <h3>address</h3>
+            <textarea name="textarea" id="txtara" rows="7" cols="50" placeholder="enter your text"></textarea>
+        </div>
+        <div>
+            <input type="button" value="submit" id="but" style="background-color: chartreuse;">
+            <input type="reset" value="reset" id="ret" style="background-color: rgb(255, 136, 0);">
+        </div>
+        
+
+
+    </form>
+</body>
+</html>
